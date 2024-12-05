@@ -11,3 +11,4 @@ Flask-Migrate==4.0.5
 Flask-SocketIO==5.3.6
 Flask-SQLAlchemy==2.5.1
 Flask-WTF==1.2.1
+PyJWT==2.9.0
