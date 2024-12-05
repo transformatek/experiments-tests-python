@@ -1,11 +1,14 @@
-from flask import Flask
+from flask import Flask,jsonify
 from flask_appbuilder import AppBuilder, SQLA
 from sqlalchemy import MetaData
 from flask_migrate import Migrate
+from flask.wrappers import Response
 
 
 app = Flask(__name__)
 app.config.from_object('config')
+
+
 
 convention = {
     "ix": "ix_%(column_0_label)s",
@@ -22,6 +25,8 @@ migrate = Migrate(app, db, render_as_batch=True)
 
 appbuilder = AppBuilder(app, db.session)
 
+app.response_class = Response
+
 
 # Register views
 
@@ -31,5 +36,4 @@ if __name__ == "__main__":
 from . import models
 from . import views
 from . import controllers
-
 

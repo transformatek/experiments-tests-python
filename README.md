@@ -47,3 +47,33 @@ flask db upgrade
 ```bash
 flask fab create-admin
 ```
+
+## steps for test API  with pytest-flask 
+
+```bash
+pip install -r requirements.txt
+```
+
+```bash
+cd src 
+```
+```bash
+cd app ```
+
+
+```bash
+cd tests```
+
+```bash
+pytest test_api.py```
+
+
+
+
+
+
+
+
+
+
+

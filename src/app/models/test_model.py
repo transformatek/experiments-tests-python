@@ -5,6 +5,8 @@ from sqlalchemy.orm import relationship
 from flask_appbuilder import Model
 
 
+
+
 class Test(Model):
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
