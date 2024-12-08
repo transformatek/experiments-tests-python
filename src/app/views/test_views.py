@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from flask_appbuilder.models.sqla.interface import SQLAInterface
 from flask_appbuilder import ModelView
-from app.models.test_model import Test
+from flask_appbuilder.models.sqla.interface import SQLAInterface
 
 from app import appbuilder, db
+from app.models.test_model import Test
 
 
 class TestModelView(ModelView):

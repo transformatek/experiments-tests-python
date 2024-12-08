@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
+from flask_appbuilder.api import BaseApi, ModelRestApi, expose
 from flask_appbuilder.models.sqla.interface import SQLAInterface
-from flask_appbuilder.api import ModelRestApi,expose,BaseApi
+
 from app import appbuilder
 from app.models.test_model import Test
-from app import appbuilder
-
 
 
 class TestModelApi(ModelRestApi):
@@ -16,9 +15,10 @@ class TestModelApi(ModelRestApi):
 appbuilder.add_api(TestModelApi)
 
 
-
 class ExampleApi(BaseApi):
-    @expose('/greeting')
+    @expose("/greeting")
     def greeting(self):
         return "hello"
+
+
 appbuilder.add_api(ExampleApi)

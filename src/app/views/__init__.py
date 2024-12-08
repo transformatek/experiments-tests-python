@@ -1,9 +1,6 @@
-from . import test_views
-
-
-
-
 from app import appbuilder, db
+
+from . import test_views
 
 appbuilder.add_link(
     name="Swagger documentation",

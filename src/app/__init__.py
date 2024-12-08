@@ -1,13 +1,11 @@
-from flask import Flask,jsonify
-from flask_appbuilder import AppBuilder, SQLA
-from sqlalchemy import MetaData
-from flask_migrate import Migrate
+from flask import Flask, jsonify
 from flask.wrappers import Response
-
+from flask_appbuilder import SQLA, AppBuilder
+from flask_migrate import Migrate
+from sqlalchemy import MetaData
 
 app = Flask(__name__)
-app.config.from_object('config')
-
+app.config.from_object("config")
 
 
 convention = {
@@ -33,7 +31,4 @@ app.response_class = Response
 if __name__ == "__main__":
     app.run(debug=True)
 
-from . import models
-from . import views
-from . import controllers
-
+from . import controllers, models, views
