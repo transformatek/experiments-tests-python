@@ -66,3 +66,16 @@ cd tests```
 
 ```bash
 pytest test_api.py```
+
+
+
+
+```bash
+pip install -r requirements.txt
+```
+
+## steps for Test pre-commit 
+
+```bash
+pre-commit run --all-files
+```
