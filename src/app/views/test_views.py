@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# Part of Odyte platform
-# Copyright (c) INFINITGRAPH INTELLIGENCE LLC, TAMPA, FL 33602, USA
 
 from flask_appbuilder.models.sqla.interface import SQLAInterface
 from flask_appbuilder import ModelView
