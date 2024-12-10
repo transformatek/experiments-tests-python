@@ -12,6 +12,9 @@ SECRET_KEY = "abcdefghijklmnopqrtu"
 
 # The SQLAlchemy connection string.
 SQLLITE_DATABASE_URI = "sqlite:///" + os.path.join(basedir, "app.db")
+SQLALCHEMY_BINDS = {
+    'second_db': "sqlite:///test.db" 
+}
 SQLALCHEMY_DATABASE_URI = os.getenv(
     "SQLALCHEMY_DATABASE_URI", SQLLITE_DATABASE_URI
 )
