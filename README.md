@@ -79,3 +79,11 @@ pip install -r requirements.txt
 ```bash
 pre-commit run --all-files
 ```
+
+## Run  Test  Unittest
+
+```bash
+ python -m unittest test_api_unitest.py
+```
+
+
