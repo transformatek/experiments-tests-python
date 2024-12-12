@@ -65,7 +65,7 @@ cd app ```
 cd tests```
 
 ```bash
-pytest test_api.py```
+pytest test_api_test.py```
 
 
 
