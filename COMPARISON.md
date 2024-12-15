@@ -72,18 +72,7 @@ A modern E2E testing tool with support for multiple browsers, parallel execution
 ### Conclusion:
 For E2E testing, Playwright is highly recommended for its speed, ease of use, and advanced features compared to Selenium.
 
-## Mocking API Calls
 
-### `Responses`
- [github.com/getsentry/responses](https://github.com/getsentry/responses)  
-A Python library for mocking HTTP requests made with the `requests` library.
-
-### `HTTPretty`
- [httpretty.readthedocs.io](http://httpretty.readthedocs.io)  
-A tool for intercepting and mocking HTTP requests. It works with various Python HTTP clients. `Responses` is simpler and more Pythonic, while `HTTPretty` offers broader client support but can be more complex to configure.
-
-### Conclusion:
-`Responses` is the best option for mocking API calls due to its simplicity and seamless integration with Python's requests library.
 
 ## Open Source Tools for Code Quality
 
